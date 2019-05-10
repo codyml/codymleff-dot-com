@@ -1,0 +1,35 @@
+---
+layout: page
+title: 'Work'
+permalink: /work/
+---
+
+<h1>Work</h1>
+<p>
+  This is a portfolio of some of my recent work.  Click any project to view or download a PDF with information and screenshots.
+</p>
+<h3><a href="/assets/downloads/cml-portfolio.pdf">Full Portfolio (PDF)</a></h3>
+
+<div class="cml-Work-projects">
+  {% for project in site.data.projects %}
+    <a href="/assets/downloads/{{ project.download }}" class="cml-Work-project">
+      <h2>{{ project.title }}</h2>
+      <h4>{{ project.description }}
+      <div class="cml-Work-projectRoles">
+        {% for role in project.roles %}
+          <img src="/assets/img/role-{{ role }}.png" alt="{{ site.data.roles[role].name }}" class="cml-Work-roleButton">
+        {% endfor %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<div class="cml-Work-roles">
+  {% for role in site.data.roles %}
+    <div class="cml-Work-role">
+      <img src="/assets/img/role-{{ role[0] }}.png" alt="{{ role[1].name }}">
+      <h5>{{ role[1].name }}</h5>
+      <p><em>{{ role[1].description }}</em></p>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,14 @@
+<nav class="cml-Nav">
+  <ul>
+    <li>
+      <a href="/">
+        <div class="cml-Nav-navLink--home">codymleff.com</div>
+      </a>
+    </li>
+    {% for item in site.data.navigation %}
+      <li>
+        <a href="{{ item.url }}">{{ item.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

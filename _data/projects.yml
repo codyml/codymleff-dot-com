@@ -1,0 +1,62 @@
+---
+
+- title: 'HealthTensor Website'
+  description: 'Marketing website for a health technology startup'
+  roles:
+    - creative_direction
+    - branding
+    - design
+    - development
+  download: 'cml-healthtensor-website.pdf'
+
+- title: 'Critica Website'
+  description: 'Home for an online health and science community'
+  roles:
+    - creative_direction
+    - project_management
+    - design
+    - development
+    - marketing
+  download: 'cml-critica-website.pdf'
+
+- title: 'Land Talk'
+  description: 'Geo-aware web application for sharing conservation interviews'
+  roles:
+    - project_management
+    - branding
+    - design
+    - development
+  download: 'cml-land-talk.pdf'
+
+- title: 'Imagined San Francisco'
+  description: 'Interactive web application for viewing curated maps and associated content'
+  roles:
+    - project_management
+    - design
+    - development
+  download: 'cml-imagined-san-francisco.pdf'
+
+- title: 'The Ethics Incubator'
+  description: 'Multimedia topic-focused content publishing platform'
+  roles:
+    - project_management
+    - branding
+    - design
+    - development
+  download: 'cml-ethics-incubator.pdf'
+
+- title: 'Left Goat Website'
+  description: 'Creative agency marketing website'
+  roles:
+    - development
+  download: 'cml-left-goat-website.pdf'
+
+- title: 'The Grand Tour Project'
+  description: 'Web application for exploring database of historical travelers'
+  roles:
+    - project_management
+    - design
+    - development
+  download: 'cml-grand-tour.pdf'
+
+---

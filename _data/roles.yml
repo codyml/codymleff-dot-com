@@ -1,0 +1,49 @@
+---
+
+creative_direction:
+  name: 'Creative Direction'
+  description: |
+    For this project, I worked with the client to identify
+    their core motivations and objectives and helped them make
+    the right high-level artistic and strategic decisions to
+    realize those goals.
+
+project_management:
+  name: 'Project Management'
+  description: |
+    For this project, I helped the client organize their project
+    into actionable tasks, set and managed budgets, coordinated
+    the exchange of content and creative assets when required,
+    and encouraged consistent and meaningful communication
+    between project participants.
+
+branding:
+  name: 'Branding'
+  description: |
+    For this project, I helped the client identify and express
+    their organization’s character and personality through
+    logos, typography, colors, templates, and other graphic
+    elements.
+
+design:
+  name: 'Web Design'
+  description: |
+    For this project, I designed content hierarchies, web pages,
+    application interfaces, interaction flows, animations,
+    and/or other graphical or interactive elements for a client.
+
+development:
+  name: 'Web Development'
+  description: |
+    For this project, I implemented a design in code, deployed
+    a project live, and/or fixed or enhanced an existing software
+    product.
+
+marketing:
+  name: 'SEO & Marketing'
+  description: |
+    For this project, I created and executed a plan to increase
+    brand or product awareness using search engine optimization,
+    online advertising, or other marketing techniques.
+
+---

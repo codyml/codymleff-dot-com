@@ -1,0 +1,9 @@
+title: Cody M Leff
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+collections:
+  projects:
