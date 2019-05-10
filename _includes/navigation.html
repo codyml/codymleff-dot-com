@@ -1,14 +1,14 @@
-<nav class="cml-Nav">
-  <ul>
-    <li>
-      <a href="/">
-        <div class="cml-Nav-navLink--home">codymleff.com</div>
-      </a>
+<a href="/" class="cml-Nav-navLinkHome">
+  {% if page.dark %}
+    <img src="/assets/img/logo-large-dark.png" alt="codymleff.com">
+  {% else %}
+    <img src="/assets/img/logo-large-light.png" alt="codymleff.com">
+  {% endif %}
+</a>
+<ul class="list-unstyled cml-Nav-navLinks">
+  {% for item in site.data.navigation %}
+    <li class="{% if item.url == page.url %} cml-Nav-selectedNavLink {% endif %}">
+      <a href="{{ item.url }}">{{ item.label }}</a>
     </li>
-    {% for item in site.data.navigation %}
-      <li>
-        <a href="{{ item.url }}">{{ item.label }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+  {% endfor %}
+</ul>

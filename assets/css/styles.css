@@ -1,10 +1,234 @@
+/*
+* Whole page styles
+*/
+
 body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
 }
 
-body.cml-Page-dark {
+.cml-Page {
+  padding-top: 5.5em;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 992px) {
+  .cml-Page {
+    padding-top: 0;
+  }
+}
+
+.cml-Page.cml-Page--dark {
   background-color: black;
   color: white;
+}
+
+.cml-Page.cml-Page--mobileNavOpen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+a:hover {
+  opacity: .85;
+}
+
+strong {
+  font-weight: 700;
+}
+
+
+/*
+* Header & nav styles
+*/
+
+.cml-MobileHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 1px 4px #ccc;
+  z-index: 1;
+}
+
+.cml-Page--dark .cml-MobileHeader {
+  background-color: black;
+  box-shadow: 0 1px 4px #444;
+}
+
+.cml-MobileHeader-items {
+  height: 5.5em;
+}
+
+.cml-MobileHeader-logo img {
+  height: 3em;
+}
+
+.cml-MobileHeader-menuButton {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.cml-Nav.cml-Nav--mobile {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 1px 0 8px #aaa;
+  z-index: 2;
+  transition: height .4s ease-in-out;
+}
+
+.cml-Page--mobileNavOpen .cml-Nav {
+  height: 100%;
+}
+
+.cml-Page--dark .cml-Nav {
+  background-color: black;
+}
+
+.cml-Nav-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.cml-Nav-navLinkHome img {
+  width: 100%;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.cml-Nav-navLinks {
+  font-style: italic;
+  font-size: 1.75em;
+}
+
+.cml-Nav-navLinks li {
+  margin: .15em 0;
+}
+
+.cml-Nav-navLinks li.cml-Nav-selectedNavLink {
+  font-weight: 700;
+}
+
+.cml-Nav-closeMobileNav {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+
+/*
+* Main content styles
+*/
+
+main {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (min-width: 992px) {
+
+  .cml-Page-mainContent {
+    min-height: 100vh;
+  }
+
+  main {
+    max-height: 100vh;
+    overflow: scroll;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    text-align: right;
+  }
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.4;
+  margin: 0 0 .65em 0;
+}
+
+h2 {
+  font-size: 1.65em;
+  font-weight: 700;
+  margin: 0 0 .35em 0;
+}
+
+h3 {
+  font-size: 1.45em;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 .25em 0;
+}
+
+p {
+  font-size: 1.05em;
+  line-height: 1.625;
+  margin: 0 0 1.5em 0;
+}
+
+
+/*
+* Styles for the Work page
+*/
+
+.cml-Work-projects {
+  margin-top: 2em;
+}
+
+.cml-Work-project {
+  margin-bottom: 3em;
+  display: block;
+}
+
+.cml-Work-projectRoles {
+  margin-top: .75em;
+}
+
+.cml-Work-roleButton {
+  width: 2em;
+}
+
+.cml-Work-roles {
+  text-align: left;
+  margin-top: 3.6em;
+  font-size: 0.9em;
+}
+
+.cml-Work-role {
+  margin-bottom: 3em;
+}
+
+.cml-Work-role .cml-Work-roleButton {
+  margin-bottom: .35em;
 }

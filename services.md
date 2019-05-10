@@ -2,7 +2,7 @@
 layout: page
 title: 'Services'
 permalink: /services/
-dark: true
+# dark: true
 ---
 
 # Services

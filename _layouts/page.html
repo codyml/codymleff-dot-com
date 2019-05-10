@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,700,700i" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,10 +24,50 @@
 
   </head>
 
-  <body class="{% if page.dark %} cml-Page-dark {% endif %}">
+  <body>
 
-    {% include navigation.html %}
-    {{ content }}
+    <div id="navMenuContainer" class="cml-Page {% if page.dark %} cml-Page--dark {% endif %}">
+
+      <header class="d-lg-none cml-MobileHeader">
+        <div class="container">
+          <div class="row justify-content-between align-items-center cml-MobileHeader-items">
+            <a href="/" class="col-6 cml-MobileHeader-logo">
+              {% if page.dark %}
+                <img src="/assets/img/logo-small-dark.png" alt="CML">
+              {% else %}
+                <img src="/assets/img/logo-small-light.png" alt="CML">
+              {% endif %}
+            </a>
+            <a id="openMobileNavMenu" class="col-auto cml-MobileHeader-menuButton">Menu</a>
+          </div>
+        </div>
+      </header>
+
+      <nav class="d-lg-none cml-Nav cml-Nav--mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col cml-Nav-inner">
+              {% include navigation.html %}
+              <a id="closeMobileNavMenu" class="cml-Nav-closeMobileNav">Close</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row align-items-center cml-Page-mainContent">
+          <main class="col-12 offset-lg-2 col-lg-6">
+            {{ content }}
+          </main>
+          <nav class="d-none d-lg-block col-4 cml-Nav cml-Nav--desktop">
+            {% include navigation.html %}
+          </nav>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="/assets/js/main.js"></script>
 
   </body>
 
