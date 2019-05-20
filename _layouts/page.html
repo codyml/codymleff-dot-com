@@ -54,14 +54,21 @@
         </div>
       </nav>
 
+      <nav class="d-none d-lg-block cml-Nav cml-Nav--desktop">
+        <div class="container">
+          <div class="row">
+            <div class="offset-8 col-4">
+              {% include navigation.html %}
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div class="container">
         <div class="row align-items-center cml-Page-mainContent">
           <main class="col-12 offset-lg-2 col-lg-6">
             {{ content }}
           </main>
-          <nav class="d-none d-lg-block col-4 cml-Nav cml-Nav--desktop">
-            {% include navigation.html %}
-          </nav>
         </div>
       </div>
 
