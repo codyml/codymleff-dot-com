@@ -98,6 +98,24 @@ strong {
   transition: height .4s ease-in-out;
 }
 
+.cml-Nav.cml-Nav--mobile .row {
+  height: 100%;
+}
+
+.cml-Nav.cml-Nav--mobile .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+}
+
 .cml-Nav.cml-Nav--desktop {
   position: fixed;
   top: 50%;
@@ -112,20 +130,6 @@ strong {
 
 .cml-Page--dark .cml-Nav {
   background-color: black;
-}
-
-.cml-Nav-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  height: 100vh;
 }
 
 .cml-Nav-navLinkHome img {
