@@ -24,10 +24,12 @@ body {
   color: white;
 }
 
-.cml-Page.cml-Page--mobileNavOpen {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+@media only screen and (max-width: 991px) {
+  .cml-Page.cml-Page--mobileNavOpen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 a,
@@ -98,7 +100,9 @@ strong {
   transition: height .4s ease-in-out;
 }
 
-.cml-Nav.cml-Nav--mobile .row {
+.cml-Nav--mobile .container,
+.cml-Nav--mobile .row,
+.cml-Nav--mobile .col {
   height: 100%;
 }
 
@@ -113,7 +117,6 @@ strong {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  height: 100%;
 }
 
 .cml-Nav.cml-Nav--desktop {
@@ -124,7 +127,7 @@ strong {
   width: 100%;
 }
 
-.cml-Page--mobileNavOpen .cml-Nav {
+.cml-Page--mobileNavOpen .cml-Nav.cml-Nav--mobile {
   height: 100%;
 }
 
