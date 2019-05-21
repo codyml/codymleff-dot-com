@@ -47,8 +47,7 @@ MongoDB, PostgreSQL, MySQL, SQLite
 Python/Flask, Python/Django, Node.js/Express, PHP/WordPress, PHP/Drupal, nginx, Apache, Jekyll
 
 ##### Client
-SPA libraries: React/Redux, Vue.js, AngularJS
-Mapping & visualization: D3.js, Google Maps API, Leaflet, Mapbox
+React/Redux, Vue.js, AngularJS, D3.js, Google Maps API, Leaflet, Mapbox
 
 ##### Health
 HL7 FHIR, SMART on FHIR, medical coding systems (ICD, LOINC, RxNorm)
@@ -56,11 +55,11 @@ HL7 FHIR, SMART on FHIR, medical coding systems (ICD, LOINC, RxNorm)
 ##### Infrastructure
 Linux shell, Git, Docker, AWS, Heroku, Webpack
 
-For all development projects, clients can expect and efficient, test-driven and source-controlled development process with clear communication throughout and seamless collaboration with other developers when necessary.  After rigorous quality assurance and debugging, I coordinate with the client to review and deploy the final product, providing continuing support following deployment and administration training as necessary.
+For all development projects, clients can expect an efficient, test-driven, and source-controlled development process with clear communication throughout and seamless collaboration with other developers when necessary.  After rigorous quality assurance and debugging, I coordinate with the client to review and deploy the final product, providing continuing support following deployment and administration training as necessary.
 
 
 ## Maintenance & Support
 
-Do you need help with an existing website?  I can modify content or appearance, fix issues, run updates, set up backups, and more.  I’m familiar with most platforms and languages and can offer technical support on any project.
+Do you need help with an existing website?  I can modify content or appearance, fix issues, run updates, set up backups, and more.  I’m familiar with most platforms and languages and can offer a technical perspective on any project.
 
-If you have an existing website and would like continuing managed services, I offer recurring plans for tasks like managing domain name and hosting accounts, running regular WordPress core and plugin updates, ensuring uptime and continued backups, and more.
+If you have an existing website and would like continuing management services, I offer recurring plans for tasks like managing domain name and hosting accounts, running regular WordPress core and plugin updates, ensuring uptime and continued backups, and more.
